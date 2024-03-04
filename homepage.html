@@ -22,11 +22,11 @@
     </section>
     <header>
         <h3>พื้นที่แปลงเพาะปลูก</h3>
-        <br>
+        <h4>500 ตารางเมตร</h4>
 <div class= "test">
         <h3>ชนิดผลไม้</h3>
-        <select onchange="Fruit()" id="Fruit">
-            <option value="กรุณาเลือกข้อมูล">กรุณาเลือกข้อมูล</option>
+        <select onchange="total()" id="Fruit">
+            <option value="กรุณาเลือกข้อมูล">กรุณาเลือกชนิดพืช</option>
             <option value="1">ทุเรียน</option>
             <option value="2">มังคุด</option>
             <option value="3">เงาะ</option>
@@ -34,18 +34,19 @@
             <option value="5">ยางพารา</option>
         </select>
 </div>
-        <br>
         <h3>จำนวนต้นไม้ทั้งหมด</h3>
         <h4 id="n"></h4>
-        <br>
         <h3>ราคาต้นกล้า</h3>
         <h4 id="c"></h4>
-        <br>
         <h3>ต้นทุนในระยะเวลา 1 ปี</h3>
-        <h4>ค่าน้ำ</h4>
-        <br>
-        <h4>ค่าปุ๋ย</h4>
-        <br>
+        <h3>ค่าปุ๋ย</h3>
+<!--จีน่าทำดรอปดาวเลือกปุ๋ย-->
+        <h3>เพิ่มเติม</h3>
+        <input type="number" name="" id="T">
+        <button onclick="total()" class="total">total</button>
+        <h3>รวม</h3>
+        <h4 id="total"></h4>
+
     </header>
     <script src="script.js"></script>
 </body>
