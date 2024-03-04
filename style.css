@@ -10,7 +10,7 @@ body {
   }  
 .navbar {
     display: flex;
-    background-color:darkgreen;
+    background-color: darkgreen;
     color: white;
 }
 
@@ -23,7 +23,7 @@ body {
 ul {
     width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     list-style: none
 }
@@ -39,6 +39,6 @@ header {
     width: 400px;
     border: 1px solid black;
     background-color:black;
-    
+    color: white;
 
 }
