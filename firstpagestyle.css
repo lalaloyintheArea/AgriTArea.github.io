@@ -22,12 +22,11 @@ a{
 :root{
         --h1-font:4.5rem;
         --h3-font:2.5rem;
-        --p-font:2rem;
+        --p-font:2.5rem;
 }
     
     
 .first {
-        border: 10px solid green;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -44,6 +43,7 @@ a{
     
 .first h3{
         font-size: var(--h3-font);
+        color:sienna;
 }
     
 .first img{
@@ -52,16 +52,16 @@ a{
 }
     
 .first .page-button{
-        padding-top: 5%;
+        padding-top: 20%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100% 100%;
 }
     
 .page-button button{
         color: black;
         font-size: var(--p-font);
-        background-color: #86a96f;
-        padding: 15px 10px;
+        background-color:darkseagreen;
+        padding: 10px 10px;
         border: none;
         box-shadow: 5px 5px rgba(111, 194, 70, 0.5);
 }
