@@ -57,7 +57,7 @@ a{
         grid-template-columns: 100% 100%;
 }
     
-.page-button button{
+.page-button a{
         color: black;
         font-size: var(--p-font);
         background-color:darkseagreen;
