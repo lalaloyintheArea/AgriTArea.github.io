@@ -11,7 +11,7 @@
 <body>
     <section class="navbar">
         <div class="logo">
-            <h1><span>AgriT</span>
+            <h1><span>Agri</span>
                 <span><img src ="https://cdn-icons-png.freepik.com/256/2303/2303716.png" height="30" width="30"></span>
             <span>Area</span> 
         </h1>
@@ -23,21 +23,30 @@
     <header>
         <h3>พื้นที่แปลงเพาะปลูก</h3>
         <br>
+<div class= "test">
         <h3>ชนิดผลไม้</h3>
-<select id="Fruit" onchange="getValue()">
-      <option value="กรุณาเลือกข้อมูล">กรุณาเลือกข้อมูล</option>
-      <option value="ทุเรียน">ทุเรียน</option>
-      <option value="มังคุด">มังคุด</option>
-      <option value="เงาะ">เงาะ</option>
-      <option value="ลำไย">ลำไย</option>
-      <option value="ยางพารา">ยางพารา</option>
-</select>
-        <h3>จำนวนต้นไม้ของด้านยาว</h3>
-        <br>
-        <h3>จำนวนต้นไม้ของด้านกว้าง</h3>
+        <select onchange="Fruit()" id="Fruit">
+            <option value="กรุณาเลือกข้อมูล">กรุณาเลือกข้อมูล</option>
+            <option value="1">ทุเรียน</option>
+            <option value="2">มังคุด</option>
+            <option value="3">เงาะ</option>
+            <option value="4">ลำไย</option>
+            <option value="5">ยางพารา</option>
+        </select>
+</div>
         <br>
         <h3>จำนวนต้นไม้ทั้งหมด</h3>
+        <h4 id="n"></h4>
+        <br>
+        <h3>ราคาต้นกล้า</h3>
+        <h4 id="c"></h4>
+        <br>
+        <h3>ต้นทุนในระยะเวลา 1 ปี</h3>
+        <h4>ค่าน้ำ</h4>
+        <br>
+        <h4>ค่าปุ๋ย</h4>
         <br>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
