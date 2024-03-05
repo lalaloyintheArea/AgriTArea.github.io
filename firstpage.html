@@ -4,9 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AgriT Area</title>
-        <link rel="stylesheet" href="./css/firstpage.css">
+        <link rel="stylesheet" href="firstpagestyle.css">
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Sarabun">
+        <style>
+            button {
+            padding: 20px 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 20px;
+            transition: all 0.25s ease;
+            }
+        .btn-1{
+            color: white;
+            overflow: hidden;
+            border-radius: 30px;
+            box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5),
+            0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+        }
+        .btn-1:hover {
+            transform: translate(0, -6px);
+            box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.5),
+            -10px 10px 25px 0px rgba(39, 200, 255, 0.5);
+        }
+        .btn-1:hover::after {
+            transform: rotate(150deg);
+        }
+        .btn-1::after{
+            content: "";
+            width: 400px;
+            height: 400px;
+            position:absolute;
+            top: -50px;
+            left: -100px;
+            background-color: #ff3cac;
+            background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+            z-index: -1;
+            transition: all 0.25s ease;
+        }
+        </style>
 </head>
 <body>
         <div class="first">
@@ -16,11 +55,6 @@
                 </h1>
                 <br>
                 <h3>คณิตศาสตร์เพื่อการเพาะปลูก</h3>
-                <div class="page-button">
-                        <div class="google-map-button">
-                                <a href="http://127.0.0.1:5500/math/%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99/homepage.html" >Google Map</a>
-                        </div>
-                </div>
-        </div>
+                    <button class="btn-1"><a href=http://127.0.0.1:5500/front/homepage.html>NEXT</a></button>
 </body>
 </html>
