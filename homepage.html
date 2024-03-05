@@ -21,9 +21,10 @@
         </ul>
     </section>
     <header>
-        <h3>พื้นที่แปลงเพาะปลูก</h3>
-        <h4>500 ตารางเมตร</h4>
-        
+        <!-- ให้เติมจำนวนไร่เองก่อน -->
+        <h3>พื้นที่แปลงเพาะปลูก</h3><h5>(1 ไร่ = 1,600 ตร.เมตร)</h5>  
+        <input type="number" name="" id="q">
+        <button onclick="total()" class="total">ตร.เมตร</button>        
         <h3>ชนิดผลไม้</h3>
 <div class= "Fruit">
         <select onchange="total()" id="Fruit">
@@ -58,7 +59,7 @@
         <input type="number" name="" id="T">
         <button onclick="total()" class="total">total</button>
         <h3>รวม</h3>
-        <h4 id="total"></h4>
+        <h2 id="total"></h2>
 
     </header>
     <script src="./js/homepage.js"></script>
