@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(GreenColorfulCartoonIllustrativeAnimalFarmPresentation.png);
+  background-size: cover;
+  background-position: center;
+}
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.sarabun-bold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a{
+  color:white;
+}
+:root{
+  --h1-font:4.5rem;
+  --h3-font:2.5rem;
+  --p-font:2.5rem;
+}
+.first {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 75%;
+  text-align: center;
+  align-items: center;
+}
+.first h1{
+  font-size: var(--h1-font);
+}
+
+.first h3{
+  font-size: var(--h3-font);
+  color:sienna;
+}
+
+.first img{
+  width: 60px;
+  height: 60px;
+}
