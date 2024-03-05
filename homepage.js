@@ -1,10 +1,10 @@
 function total(){
-    var area = 500
     var type = document.getElementById("Fruit").value
     var fert = document.getElementById("fert").value 
+    var q = document.getElementById("q").value
     if(type == 1){ // ทุเรียน
         a = 80
-        var n = area/a
+        var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น "
         p = 120
@@ -50,7 +50,7 @@ function total(){
     
     if(type == 2){ // มังคุด
         a = 80
-        var n = area/a
+        var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น "
         p = 80
@@ -95,7 +95,7 @@ function total(){
     
     if(type == 3){ // เงาะ
         a = 80
-        var n = area/a
+        var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
         p = 50
@@ -140,7 +140,7 @@ function total(){
     
     if(type == 4){ // ลำไย
         a = 64
-        var n = area/a
+        var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
         p = 70
@@ -186,7 +186,7 @@ function total(){
     
     if(type == 5){ // ยางพารา
         a = 20
-        var n = area/a
+        var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
         p = 99
