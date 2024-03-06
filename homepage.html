@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="./homepage.css">
     <title>AgriT Area</title>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Sarabun">
@@ -40,28 +40,30 @@
         <h3>ราคาต้นกล้า</h3>
         <h4 id="c"></h4><br>
         <h3>ต้นทุนในระยะเวลา 1 ปี</h3>
-        <h3>ชนิดของปุ๋ย</h3>
+        <h3>ชนิดของปุ๋ย (กระสอบละ 50 kg.)</h3>
 <div class="fert">
         <select onchange="total()" id="fert">
          <option value="0">กรุณาเลือกชนิดปุ๋ย</option>
          <option value="1">ปุ๋ยอินทรีย์เคมี</option>
          <option value="2">ปุ๋ยหมัก</option>
          <option value="3">ปุ๋ยคอก</option>
-         <option value="4">อื่นๆ</option>
+         <option value="4">อื่น ๆ (ระบุราคาเอง)</option>
         </select>
 </div>
         <h3>ราคาปุ๋ยต่อหนึ่งกระสอบ</h3><h5>(ระบุราคาเอง)</h5>
         <input type="number" name="" id="g">
+        <button onclick="total()" class="g">click</button>
         <h3>จำนวนกระสอบของปุ๋ย</h3>
         <h4 id="x"></h4>
         <h3>ค่าปุ๋ย</h3>
         <h4 id="y"></h4>
         <h3>เพิ่มเติม</h3>
         <input type="number" name="" id="T">
-        <button onclick="total()" class="total">total</button>
+        <button onclick="total()" class="total">click</button>
         <br><br><h3>รวม</h3>
         <h2 id="total"></h2>
+
     </header>
-    <script src="homepage.js"></script>
+    <script src="./homepage.js"></script>
 </body>
 </html>
