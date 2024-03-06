@@ -164,7 +164,7 @@ function total(){
             }
              if (fert == 4){  //อื่นๆ
                 d = 500
-                var x = (n*12)/d
+                var x = (n*2*12)/d
                 x = Math.ceil(x)
                document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
                 var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
@@ -284,7 +284,7 @@ function total(){
         }
          if (fert == 4){  //อื่นๆ
             d = 500
-            var x = (n*12)/d
+            var x = (n*2*4*12)/d
             x = Math.ceil(x)
            document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
             var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
