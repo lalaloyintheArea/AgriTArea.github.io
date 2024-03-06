@@ -1,7 +1,8 @@
 function total(){
-    var type = document.getElementById("Fruit").value
-    var fert = document.getElementById("fert").value 
-    var q = document.getElementById("q").value
+    var type = document.getElementById("Fruit").value //เลือกพืช
+    var fert = document.getElementById("fert").value //เลือกปุ๋ย
+    var q = document.getElementById("q").value //ใส่พื้นที่
+    var g = document.getElementById("g").value //ใส่ค่าปุ๋ยที่ต้องการ
     if(type == 1){ // ทุเรียน
         a = 80
         var n = q/a
@@ -21,7 +22,7 @@ function total(){
              var x = (n*12)/d
              x = Math.ceil(x)
             document.getElementById("x").innerHTML = x + " กระสอบ "
-             b = 1060 // ราคาค่ากลางรอเปลี่ยน
+             b = 1060 //ค่ากลางเปลี่ยนแล้ว
              var y = x*b
             document.getElementById("y").innerHTML = y + " บาท "
         }
@@ -39,17 +40,25 @@ function total(){
              var x = (n*12)/d
              x = Math.ceil(x)
             document.getElementById("x").innerHTML = x + " กระสอบ "
-             b = 450 // ราคาค่ากลางรอเปลี่ยน
+             b = 450 //ค่ากลางเปลี่ยนแล้ว
              var y = x*b
             document.getElementById("y").innerHTML = y + " บาท "
         }
-        var T = document.getElementById("T").value
+         if (fert == 4){  //อื่นๆ
+             d = 500
+             var x = (n*12)/d
+             x = Math.ceil(x)
+            document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
+             var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+            document.getElementById("y").innerHTML = y + " บาท "
+         }
+        var T = document.getElementById("T").value //ใส่ค่าเพิ่มเติมเอง
         if (T=="") {
             T=0
         }
         var total = parseInt(parseInt(c)+parseInt(y)+parseInt(T)) // รวมทุเรียน
         document.getElementById("total").innerHTML = total + " บาท "
-        console.log("durian") 
+        console.log("durian")
     
     }
     
@@ -72,7 +81,7 @@ function total(){
                  var x = (n*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 1060 // ราคาค่ากลางรอเปลี่ยน
+                 b = 1060 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
@@ -81,7 +90,7 @@ function total(){
                  var x = (n*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 300 // ราคาค่ากลางรอเปลี่ยน
+                 b = 300 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
@@ -90,11 +99,20 @@ function total(){
                  var x = (n*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 450 // ราคาค่ากลางรอเปลี่ยน
+                 b = 450 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
-        var T = document.getElementById("T").value
+             if (fert == 4){  //อื่นๆ
+                d = 500
+                var x = (n*12)/d
+                x = Math.ceil(x)
+               document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
+                var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+               document.getElementById("y").innerHTML = y + " บาท "
+            }
+           
+        var T = document.getElementById("T").value //ใส่ค่าเพิ่มเติมเอง
         if (T=="") {
             T=0
         }
@@ -122,7 +140,7 @@ function total(){
                  var x = (n*2*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 1060 // ราคาค่ากลางรอเปลี่ยน
+                 b = 1060 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
@@ -131,7 +149,7 @@ function total(){
                  var x = (n*2*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 300 // ราคาค่ากลางรอเปลี่ยน
+                 b = 300 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
@@ -140,11 +158,20 @@ function total(){
                  var x = (n*2*12)/d
                  x = Math.ceil(x)
                 document.getElementById("x").innerHTML = x + " กระสอบ "
-                 b = 450 // ราคาค่ากลางรอเปลี่ยน
+                 b = 450 //ค่ากลางเปลี่ยนแล้ว
                  var y = x*b
                 document.getElementById("y").innerHTML = y + " บาท "
             }
-        var T = document.getElementById("T").value
+             if (fert == 4){  //อื่นๆ
+                d = 500
+                var x = (n*12)/d
+                x = Math.ceil(x)
+               document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
+                var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+               document.getElementById("y").innerHTML = y + " บาท "
+            }
+           
+        var T = document.getElementById("T").value //ใส่ค่าเพิ่มเติมเอง
         if (T=="") {
             T=0
         }
@@ -172,7 +199,7 @@ function total(){
             var x = (n*12)/d
             x = Math.ceil(x)
         document.getElementById("x").innerHTML = x + " กระสอบ "
-            b = 1060 // ราคาค่ากลางรอเปลี่ยน
+            b = 1060 //ค่ากลางเปลี่ยนแล้ว
             var y = x*b
            document.getElementById("y").innerHTML = y + " บาท "
        }
@@ -181,7 +208,7 @@ function total(){
             var x = (n*12)/d
             x = Math.ceil(x)
         document.getElementById("x").innerHTML = x + " กระสอบ "
-            b = 300 // ราคาค่ากลางรอเปลี่ยน
+            b = 300 //ค่ากลางเปลี่ยนแล้ว
             var y = x*b
            document.getElementById("y").innerHTML = y + " บาท "
        }
@@ -190,12 +217,21 @@ function total(){
             var x = (n*12)/d
             x = Math.ceil(x)
         document.getElementById("x").innerHTML = x + " กระสอบ "
-            b = 450 // ราคาค่ากลางรอเปลี่ยน
+            b = 450 //ค่ากลางเปลี่ยนแล้ว
             var y = x*b
            document.getElementById("y").innerHTML = y + " บาท "
         }
+         if (fert == 4){  //อื่นๆ
+            d = 500
+            var x = (n*12)/d
+            x = Math.ceil(x)
+           document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
+            var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+           document.getElementById("y").innerHTML = y + " บาท "
+        }
+       
 
-        var T = document.getElementById("T").value
+        var T = document.getElementById("T").value //ใส่ค่าเพิ่มเติมเอง
         if (T=="") {
             T=0
         }
@@ -224,7 +260,7 @@ function total(){
              var x = (n*2*4*12)/d
              x = Math.ceil(x)
             document.getElementById("x").innerHTML = x + " กระสอบ "
-             b = 1060 // ราคาค่ากลางรอเปลี่ยน
+             b = 1060 //ค่ากลางเปลี่ยนแล้ว
              var y = x*b
             document.getElementById("y").innerHTML = y + " บาท "
         }
@@ -233,7 +269,7 @@ function total(){
              var x = (n*2*4*12)/d
              x = Math.ceil(x)
             document.getElementById("x").innerHTML = x + " กระสอบ "
-             b = 300 // ราคาค่ากลางรอเปลี่ยน
+             b = 300 //ค่ากลางเปลี่ยนแล้ว
              var y = x*b
             document.getElementById("y").innerHTML = y + " บาท "
         }
@@ -242,11 +278,20 @@ function total(){
              var x = (n*2*4*12)/d
              x = Math.ceil(x)
             document.getElementById("x").innerHTML = x + " กระสอบ "
-             b = 450 // ราคาค่ากลางรอเปลี่ยน
+             b = 450 //ค่ากลางเปลี่ยนแล้ว
              var y = x*b
             document.getElementById("y").innerHTML = y + " บาท "
         }
-        var T = document.getElementById("T").value
+         if (fert == 4){  //อื่นๆ
+            d = 500
+            var x = (n*12)/d
+            x = Math.ceil(x)
+           document.getElementById("x").innerHTML = x + " กระสอบ "//ใส่ค่าเพิ่มเติม
+            var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+           document.getElementById("y").innerHTML = y + " บาท "
+        }
+       
+        var T = document.getElementById("T").value //ใส่ค่าเพิ่มเติมเอง
         if (T=="") {
             T=0
         }
