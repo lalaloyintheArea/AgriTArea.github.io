@@ -4,7 +4,7 @@ function total(){
     var q = document.getElementById("q").value //ใส่พื้นที่
     var g = document.getElementById("g").value //ใส่ค่าปุ๋ยที่ต้องการ
     if(type == 1){ // ทุเรียน
-        a = 80
+        a = 8*10
         var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น "
@@ -63,7 +63,7 @@ function total(){
     }
     
     if(type == 2){ // มังคุด
-        a = 80
+        a = 8*10
         var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น "
@@ -122,7 +122,7 @@ function total(){
     }
     
     if(type == 3){ // เงาะ
-        a = 80
+        a = 8*10
         var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
@@ -181,7 +181,7 @@ function total(){
     }
     
     if(type == 4){ // ลำไย
-        a = 64
+        a = 8*8
         var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
@@ -241,7 +241,7 @@ function total(){
     }
     
     if(type == 5){ // ยางพารา
-        a = 20
+        a = 8*2.5
         var n = q/a
         n = Math.floor(n)
         document.getElementById("n").innerHTML = n + " ต้น"
