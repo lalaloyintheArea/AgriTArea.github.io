@@ -238,7 +238,7 @@ function total(){
             var z = (n*12)/d
             z = Math.ceil(z)
            document.getElementById("z").innerHTML = z + " กระสอบ "//ใส่ค่าเพิ่มเติม
-            var y = x*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
+            var y = z*g //ประกาศ y มาแล้วให้เท่ากับ จำนวนกระสอบคุณกับค่าที่ใส่เข้ามา
            document.getElementById("y").innerHTML = y + " บาท "
         }
        
