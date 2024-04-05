@@ -1,0 +1,127 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .sarabun-bold {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }  
+  .navbar {
+    display: flex;
+    background-color: white;
+    color: darkgreen;
+  }
+  
+  .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-10%, 5%);
+  }
+  .name {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translate(-5%, 0)
+  }
+  .nav {
+    height: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: olivedrab;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul {
+    list-style: none;
+    background-color: olivedrab;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-size: .8em;
+    line-height: 60px;
+    text-align: center;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s;
+  }
+  .nav a:hover {
+    background-color: beige;
+    color: black;
+  }
+  .nav li li {
+    font-size: .9em;
+  }
+  /* style menu foe larger screen */
+  @media screen and (min-width:650px){
+    .nav li {
+      width: 385px;
+      border-bottom: none;
+      height: 60px;
+      line-height: 60px;
+      font-size: 1em;
+      display: inline-block;
+      margin-right: -4px;
+    }
+    .nav a{
+      border-bottom: none;
+    }
+    .nav > ul > li {
+      text-align: center;
+    }
+    .nav > ul > li > a {
+      padding-left: 0;
+    }
+    /* sub menu */
+    .nav li ul {
+      position: absolute;
+      display: none;
+      width: inherit;
+    }
+    .nav li:hover ul {
+      display: block;
+    }
+    .nav li ul li{
+      display: block;
+    }
+  }
+.grid-card {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-card .box {
+  width: 200px;
+  height: 200px;
+  /* background: red; */
+  background-position: center;
+  background-size: cover;
+}
+.durian {
+  background-image: url(ทุเรียน.png);
+}
+.มังคุด {
+  background-image: url(2.png);
+}
+.rambutan {
+  background-image: url(3.png);
+}
+.longan {
+  background-image: url(4.png);
+}
+.rubber {
+  background-image: url(5.png);
+}
+.content .grid-card .box:hover {
+  transform: translateY(-15px);
+}
