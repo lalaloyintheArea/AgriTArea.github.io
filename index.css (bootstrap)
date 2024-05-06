@@ -1,0 +1,40 @@
+body {
+font-family: "IBM Plex Sans Thai", sans-serif;
+}
+header {
+    height: 10vh;
+}
+.navbar-text {
+    font-size: 16px;
+}
+nav {
+    height: 14vh;
+    width: 100vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+nav ul {
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+nav ul:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav ul:hover:after {
+    width: 100%;
+
+}
