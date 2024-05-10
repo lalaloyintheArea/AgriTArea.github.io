@@ -37,10 +37,10 @@
         <div class="collapse navbar-collapse align-center justify-content-space-around" id="navbartoggle">
           <ul class="navbar-nav">
             <li class="nav-item" aria-current="page">
-              <a class="nav-link" href="#home">หน้าหลัก</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/index.html">หน้าหลัก</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/homepage.html">โปรแกรมคำนวณแปลงเพาะปลูกและต้นทุน</a>
+            <li class="nav-item" aria-current="page">
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/calculate.html">โปรแกรมคำนวณแปลงเพาะปลูกและต้นทุน</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -68,3 +68,94 @@
     </div>
   </nav>
   <!-- end navbar -->
+
+  <!-- sidebar -->
+  <section class="row justify-content-space-around">
+    <aside class="col-4 col-xl-3 container bg-dark text-white border-bottom">
+      <div class="mt-5 ps-4">
+      <h5>พื้นที่แปลงเพาะปลูก</h5>
+      <h7>(กรอกพื้นที่ในหน่วยตารางเมตร)</h7>
+      <br>
+        <input type="number" name="" id="q">
+      </br>
+      <br>
+      <h6>ไม้ยืนต้น</h6>
+      <div class= "Fruit">
+      <select onchange="total()" id="Fruit">
+          <option value="0">กรุณาเลือกไม้ยืนต้น</option>
+          <option value="1">ทุเรียน</option>
+          <option value="2">มังคุด</option>
+          <option value="3">เงาะ</option>
+          <option value="4">ลำไย</option>
+          <option value="5">ยางพารา</option>
+      </select>
+      </div>
+      <br>
+      <h6>ระยะห่างของการปลูก (แถว x ต้น)</h6>
+      <div class="text-warning">
+      <h7 id ="a"></h7>
+      </div>
+      <br>
+      <h6>จำนวนต้นกล้าทั้งหมด</h6>
+      <div class="text-warning">
+      <h7 id="n"></h7>
+      </div>
+      <br>
+      <h6>ราคาต้นกล้าทั้งหมด</h6>
+      <div class="text-warning">
+      <h7 id="c"></h7><br>
+      </div>
+      <br>
+      <h5>ต้นทุนในระยะเวลา 1 ปี</h5>
+      <h6>ชนิดของปุ๋ย (กระสอบละ 50 kg.)</h6>
+      <div class="fert">
+      <select onchange="total()" id="fert">
+       <option value="0">กรุณาเลือกชนิดปุ๋ย</option>
+       <option value="1">ปุ๋ยอินทรีย์เคมี</option>
+       <option value="2">ปุ๋ยหมัก</option>
+       <option value="3">ปุ๋ยคอก</option>
+       <option value="4">อื่น ๆ (ระบุราคาเอง)</option>
+      </select>
+      </div>
+      <br>
+      <h6>ราคาปุ๋ยต่อหนึ่งกระสอบ</h6>
+      <div class="text-danger">
+      <h7>(ระบุราคาเอง)</h7>
+      </div>
+      <span>
+      <input type="number" name="" id="g">
+      </span>
+      <button onclick="total()" class="btn btn-info btn-sm">click</button>
+      <br><br>
+      <h6>จำนวนกระสอบของปุ๋ย</h6>
+      <div class="text-warning">
+      <h7 id="z"></h7>
+      </div>
+      <br>
+      <h6>ค่าปุ๋ย</h6>
+      <div class="text-warning">
+      <h7 id="y"></h7>
+      </div>
+      <br>
+      <h6>เพิ่มเติม</h6>
+      <input type="number" name="" id="T">
+      <button onclick="total()" class="btn btn-info btn-sm">click</button>
+      <br><br><h3>รวม</h3>
+      <div class="text-danger">
+      <h4 id="total"></h4>
+      </div>
+    </aside>
+
+<!-- mainbar -->
+    <main class="col-8 col-xl-9">
+      
+    </main>
+  </section>
+
+
+
+  <script src="./homepage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
