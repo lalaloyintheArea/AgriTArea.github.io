@@ -35,6 +35,9 @@ nav li:after {
     bottom: -10px;
     transition: 0.3s;
 }
+/* nav ul li:hover {
+    color: white;
+} */
 nav li:hover:after {
     width: 100%;
 }
@@ -54,6 +57,88 @@ nav li:hover:after {
     color: white;
 
 }
-
+.col {
+    transition: all 0.3s;
+    object-fit: cover;
+    object-position: center;
+    place-items: center;
+}
+.background-image {
+    object-fit: cover;
+    object-position: center;
+}
+.col:hover {
+    transform: scale(1.08);
+}
+ /******* responsive 480px ********/
+ @media screen and (max-width: 480px) {
+    header {
+        height: 8vh;
+    }
+    .navbar-text {
+        font-size: 16px;
+    }
+    nav {
+        height: 20vh;
+        width: 80vw;
+        min-width: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    nav li {
+        position: relative;
+        text-decoration: none;
+        color:white;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+    nav li:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        color: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    nav li:hover:after {
+        width: 100%;
+    }
+    .col {
+        object-fit: cover;
+        object-position: center;
+    }
+    .navbar-toggler {
+        border: none;
+        font-size: 1.25rem;
+    }
+    .navbar-toggler,.navbar-toggler-icon:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    .nav-link:hover {
+        color: white;
+    
+    }
+    .col {
+        transition: all 0.3s;
+        object-fit: cover;
+        object-position: center;
+    }
+    .col:hover {
+        transform: scale(1.08);
+ }
+    .col-8 {
+        font-size: 0.75rem;
+    }
+    .col-4 {
+        font-size: 0.75rem;
+    }
+ }
 
 
