@@ -42,22 +42,8 @@
             <li class="nav-item">
               <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/calculate.html">โปรแกรมคำนวณแปลงเพาะปลูกและต้นทุน</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                ถาม-ตอบ
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ทุเรียน</a></li>
-                <li><a class="dropdown-item" href="#">มังคุด</a></li>
-                <li><a class="dropdown-item" href="#">เงาะ</a></li>
-                <li><a class="dropdown-item" href="#">ลำไย</a></li>
-                <li><a class="dropdown-item" href="#">ยางพารา</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">คำถามทั่วไป</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/faq.html">ถาม-ตอบ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -71,52 +57,90 @@
 
   <!-- card -->
   <div class="container px-4 py-5" id="">
-    <h2 class="pb-2 border-bottom">พืช</h2>
+    <h2 class="pb-2 border-bottom">MENU</h2>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('https://th.bing.com/th/id/R.ab9aa0b0cd9c9e87d1838f02a6bb1573?rik=igcso5JzEPj9JA&pid=ImgRaw&r=0');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <a href="#" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">ทุเรียน</h3></a>
+        <div class="card card-cover h-90 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="https://d3dyak49qszsk5.cloudfront.net/_7ccc4f0f7c.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <a href="https://www.google.com/" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">ทุเรียน</h3></a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('https://tuemaster.com/wp-content/uploads/2020/11/m.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <a href="#" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">มังคุด</h3></a>
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="https://www.prachachat.net/wp-content/uploads/2022/07/%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B8%E0%B8%941-278.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <a href="https://www.google.com/" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">มังคุด</h3></a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('https://i0.wp.com/vietnamez.com/wp-content/uploads/2023/06/image-382.png?w=1200&ssl=1');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <a href="#" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">เงาะ</h3></a>
+        <div class="card card-cover h-90 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1662606494/attached_image_th/freshandriperambutansweettropicalfruitpeeledrambutanwith.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <a href="https://www.google.com/" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">เงาะ</h3></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('https://thaiforestfood.com/wp-content/uploads/2021/08/%E0%B8%A5%E0%B8%B3%E0%B9%84%E0%B8%A2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <a href="#" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">ลำไย</h3></a>
+        <div class="card card-cover h-90 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="https://image.makewebcdn.com/makeweb/m_1920x0/oFvGx8Urz/ThaiFruit/222.jpg?v=202405081832" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <a href="https://www.google.com/" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">ลำไย</h3></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('https://numrubberandlatex.com/wp-content/uploads/2021/10/close-up-bowlful-natural-rubber-latex-trapped-from-rubber-tree.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <a href="#" h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-decoration-none text-white">ยางพารา</h3></a>
+        <div class="card card-cover h-90 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="https://cdn-dhpod.nitrocdn.com/ciLqvltLGzQghvUohHGIDrpOdslNfbyn/assets/images/optimized/rev-2300483/www.mtkwood.com/wp-content/uploads/2020/10/rubber-tree-bowl-filled-with-latex-scaled.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <a href="https://www.google.com/" h3 class="pt-5 mt-5 mb-8 display-6 lh-1 fw-bold text-decoration-none text-white">ยางพารา</h3></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- end card -->
+
+  <!-- footer -->
+  <a name ="about">
+  <div class="container-fluid">
+    <footer class="row row-cols-1 py-5 my-5 border-top ms-2">
+      <div class="container text-center">
+        <div class = "row">
+          <div class="col-4">
+            <h3><span>Agri</span>
+            <span><img src="https://cdn-icons-png.freepik.com/256/2303/2303716.png" height="30" width="30"></span>
+            <span>Area</span>
+            </h3>
+            <p class="text-body-secondary">© 2024</p>
+          </div>
+          <div class="col-8">
+            <div class="text-success">
+            <h5>โครงงานคณิตศาสตร์ เรื่อง AgriT Area (คณิตศาสตร์เพื่อการเพาะปลูก)</h5>
+            </div>
+            นักเรียนห้องเรียนพิเศษวิทยาศาสตร์ คณิตศาสตร์ เทคโนโลยีและสิ่งแวดล้อม (สสวท.)  <br>
+            จัดทำโดย นางสาวจารุวรรณ มีทิพย์ , นางสาวพรธีรา งามการ , นางสาวพรวฤณ ประจงการ <br>
+            โรงเรียนเบญจมราชูทิศ จังหวัดจันทบุรี
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </a>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
