@@ -1,0 +1,91 @@
+body {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    }
+    header {
+        height: 8vh;
+    }
+    .navbar-text {
+        font-size: 16px;
+    }
+    nav {
+        height: 14vh;
+        width: 100vw;
+        min-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    nav li {
+        position: relative;
+        text-decoration: none;
+        color:white;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+    nav li:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        color: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    nav li:hover:after {
+        width: 100%;
+    }
+    .navbar-toggler {
+        border: none;
+        font-size: 1.25rem;
+    }
+    .navbar-toggler,.navbar-toggler-icon:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    .nav-link:hover {
+        color: white;
+    }
+    /* FAQ section start */
+    .home {
+        width: 100%;
+        height: 20vh;
+    }
+    .home .content{
+        text-align: center;
+        padding-top: 55px;
+    }
+    .home .content h2 {
+        font-size: 45px;
+    }
+    .changecontent::after {
+        content: '';
+        color :black;
+        animation: changetxt 8s infinite linear;
+    }
+    @keyframes changetxt {
+        0%{content: "การจัดการน้ำ ?";
+            color: teal;}
+        20%{content: "ปัญหาน้ำแล้ง ?";
+            color: teal;}
+        40%{content: "การเก็บเกี่ยว ?";
+            color: teal;}
+        60%{content: "การส่งออก ?";
+            color: teal;}
+        80%{content: "มาตรฐาน GAP ?";
+            color: teal;}
+        100%{content: "ทำอย่างไร ถ้าไม่เผา ?";
+            color: teal;}
+    }
+    /* FAQ section end */
+
+    /* <!-- question list --> */
+    .col {
+        height: 310vh;
+    }
+    .thasta {
+        text-decoration: none;
+    }
