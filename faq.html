@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriTArea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="py-4 mb-4">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <h3><span>Agri</span>
+          <span><img src="https://cdn-icons-png.freepik.com/256/2303/2303716.png" height="30" width="30"></span>
+          <span>Area</span>
+        </h3>
+      </a>
+      <span class="navbar-text">
+        Benchamarachuthit Chanthaburi School
+      </span>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-light bg-success">
+    <div class="container-fluid d-flex justify-content-center py-3">
+      <header class="d-flex justify-content-center align-center py-3">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbartoggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-center justify-content-space-around" id="navbartoggle">
+          <ul class="navbar-nav">
+            <li class="nav-item" aria-current="page">
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/calculate.html">โปรแกรมคำนวณแปลงเพาะปลูกและต้นทุน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/testbootstrap/faq.html">ถาม-ตอบ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- FAQ section start -->
+  <div class="home bg-white text-success">
+    <div class="content">
+        <h2>ถาม-ตอบ</h2>
+        <h3 class="changecontent"></h3>
+    </div>
+  </div>
+  <!-- FAQ section end -->
+
+  <!-- question list -->
+  <div class="container">
+    <div class="row justify-content-center bg-white mt-3">
+      <div class="col mt-5 ps-4 text-dark d-block rounded circle shadow">
+        <h2 class="pb-2 mt-5 ms-3">คำถามที่พบบ่อย</h2>
+        <hr>
+        <h4 class="mt-5 ms-3">จัดการการให้น้ำแก่ไม้ผลอย่างไร จึงเหมาะสมสำหรับช่วงแล้ง</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3 fs-6" style="width: 1000px;">
+              จัดหาแหล่งน้ำ ปรับปรุงบ่อน้ำให้อยู่ในสภาพที่ใช้งานได้ และสูบน้ำจากแหล่งน้ำใกล้เคียงมาเก็บกักไว้ หมั่นตรวจสอบระบบส่งน้ำ ควบคุมอย่าให้น้ำรั่วไหล
+              <br>
+              และการให้น้ำแก่ไม้ผลในช่วงแล้ง ควรคำนึงถึงการให้น้ำแบบประหยัดที่สุด คือ <br>
+              - ให้น้ำภายในบริเวณรัศมีทรงพุ่มเท่านั้น อย่าให้น้ำมากจนไหลแฉะไปทั่วสวน <br>
+              - ควรให้น้ำแบบระบบน้ำหยดหรือหัวเหวี่ยงขนาดเล็กจะช่วยประหยัดน้ำได้มากกว่าการใช้สายยางรดน้ำ <br>
+              - ให้น้ำตามความต้องการของพืชแค่ดินชุ่มชื้น หรือน้อยๆแต่บ่อยครั้ง เพื่อลดการสูญเสียน้ำเปลี่ยนช่วงเวลาการให้น้ำเป็นช่วงกลางคืน เพื่อช่วยให้พืช <br> ลดการระเหยน้ำจากการถูกแดดเผา <br>
+              - กรณีที่ไม่มีระบบน้ำหรือน้ำสำรองเก็บไว้ควรประสานงานกับหน่วยงานในพื้นที่ นำน้ำมารดต้นไม้ผลทันที อย่างน้อย 7 – 10 วันต่อครั้ง เพื่อช่วยให้ต้นไม้ผลมีชีวิตรอดผ่านแล้งไปได้
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-5 ms-3">การขยายพันธุ์พืช สามารถทำได้ด้วยวิธีการใดบ้าง</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3 fs-6" style="width: 1000px;">
+              การเลือกวิธีการขยายพันธุ์พืชที่เหมาะสมจะทำให้สามารถผลิตต้นกล้าได้ตามปริมาณและคุณภาพที่ต้องการ โดยเราสามารถขยายพันธุ์พืชได้หลายวิธี ดังนี้ <br><br>
+              <div class="fw-bold text-success">1.การเพาะเมล็ด</div>
+              ข้อดี : ทำได้ง่ายและรวดเร็ว, ทำได้ทุกฤดูกาล, ไม่ค่อยติดโรคไวรัสจากต้นแม่ , มีรากแก้ว ทำให้มีความแข็งแรง หยั่งรากลึกหาน้ำและอาหารได้ดี <br>
+              ข้อเสีย :  มักมีการกลายพันธุ์  , ออกผลช้ากว่า , ได้ต้นที่สูงใหญ่จึงไม่สะดวกต่อการเก็บเกี่ยวและดูแลรักษา , ต้นที่ได้มีขนาดที่ไม่สม่ำเสมอ , พืชบางชนิดไม่มีเมล็ดหรือเป็นหมัน , พืชบางชนิดงอกช้า  <br><br>
+              <div class="fw-bold text-success">2.การใช้ส่วนต่าง ๆของพืช</div> เช่น ปักชำกิ่ง  ตอนกิ่ง  ทาบกิ่ง ต่อกิ่ง ติดตา เสียบยอด แยกหน่อ รวมถึงเพาะเลี้ยงเนื้อเยื่อ <br>  
+              ข้อดี : ได้ต้นที่ตรงตามพันธุ์ , ออกผลเร็วกว่าต้นที่เพาะจากเมล็ด , ได้ต้นที่ไม่สูงเกินไป สะดวกแก่การเก็บเกี่ยวและดูแลรักษา , ได้ต้นที่มีขนาดสม่ำเสมอกัน <br>
+              ข้อเสีย : ทำได้ยากกว่าการเพาะเมล็ด ต้องอาศัยความชำนาญและประสบการณ์  , มักต้องทำในสภาพอากาศที่เหมาะสม , ถ้าต้นแม่เป็นโรค ต้นใหม่ที่ได้มักติดโรคมาด้วย , ไม่มีรากแก้ว ทำให้หักล้มง่าย   
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-5 ms-3">แหล่งซื้อเมล็ดพันธุ์หรือพันธุ์พืชที่น่าเชื่อถือ สามารถซื้อจากที่ไหนได้บ้าง</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3" style="width: 1000px;">
+              สามารถซื้อเมล็ดพันธุ์หรือพันธุ์พืชจากร้านค้าหรือผู้ประกอบการที่น่าเชื่อถือได้ โดยอาจพิจารณาจากจากคำแนะนำของผู้มีประสบการณ์ที่เชื่อถือได้ <br>
+              รวมทั้งอาจพิจารณาจากประสบการณ์ในการปลูกครั้งที่ผ่านๆ มาของเรา ว่าเมล็ดพันธุ์จากร้านที่เคยซื้อมาเมื่อนำมาปลูกแล้วมีอัตราการงอกสูงหรือไม่ ผลผลิตมีรูปร่างดี ตรงตามลักษณะที่โฆษณาไว้หรือไม่       
+              อย่างไรก็ตาม ในส่วนของร้านค้าเมล็ดพันธุ์พืช สามารถตรวจสอบรายชื่อร้านค้าที่ขึ้นทะเบียนไว้อย่างถูกต้อง จากเว็บไซต์ สมาคมการค้าเมล็ดพันธุ์ไทย <a class = "thasta fw-bold text-success" href = "http://www.thasta.com/" >http://www.thasta.com/</a>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-5 ms-3">การจัดการเศษวัสดุทางการเกษตรทำอย่างไร</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3" style="width: 1000px;">
+              - ไถกลบ การไถกลบควรทำควบคู่ไปกับการใช้สารอินทรีย์ สำหรับเร่งการย่อยสลาย หรือ “น้ำหมักชีวภาพ” เพื่อเพิ่มประสิทธิภาพในการย่อยสลายให้เป็นปุ๋ย ซึ่งจะทำให้โครงสร้างดินดี เพิ่มอินทรียวัตถุ และมีผลผลิตเพิ่มขึ้น <br>
+              - ใช้ปรับปรุงบำรุงดิน สามารถทำได้ด้วยการไถกลบให้ย่อยสลาย และการนำมาทำปุ๋ยหมัก รวมทั้งใช้ในการคลุมดินสำหรับรักษาความชื้น <br>
+              - ผลิตปุ๋ยอินทรีย์  ด้วยการนำเศษวัสดุการเกษตรที่เหลือทิ้งในแปลงมาผลิตใช้เอง เป็นการลดต้นทุน และช่วยปรับปรุงดินให้อุดมสมบูรณ์ <br>
+              - ใช้เป็นอาหารสัตว์ เช่น การนำเปลือกข้าวโพดมาหมักเป็นอาหารสำหรับเลี้ยงโค หรือการอัดฟางข้าวเป็นก้อน เพื่อนำไปเป็นอาหารโคกระบือ <br>
+              - นำมาใช้เป็นพลังงานทดแทน เช่น ฟางข้าว ยอดและใบอ้อย เปลือกและซังข้าวโพด ถือเป็น ชีวมวล (Biomass) สามารถนำมาใช้เป็นพลังงานทางเลือกได้ เช่น นำมาอัดแท่งเพื่อใช้ในครัวเรือน <br>
+            </div>
+          </div>
+        </div>
+        <h4 class="mt-5 ms-3">มาตรฐาน GAP คืออะไร จำเป็นต้องมีไหม</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3" style="width: 1000px;">
+              <div class="fw-bold text-success">จี เอ พี (Good Agricultural Practice ; GAP)</div>คือการปฏิบัติทางการเกษตรที่ดีในการผลิตพืช เพื่อให้ได้ผลผลิตที่ดี มีคุณภาพ ได้มาตรฐาน ปลอดภัยทั้งต่อผู้ผลิตและผู้บริโภค <br><br>
+              <div class="fw-bold text-success">การปลูกพืชระบบ GAP เป็นอย่างไร ?</div>
+              เป็นการปลูกพืชตั้งแต่ การเตรียมพื้นที่ปลูก การเตรียมพันธุ์ การปลูก การดูแลรักษา การเก็บเกี่ยว การขนส่ง การปฏิบัติหลังการเก็บเกี่ยว <br>
+              โดยเกษตรกรต้องจดบันทึกการปฏิบัติงานทุกขั้นตอนเพื่อให้กระบวนการผลิต มีคุณภาพและได้มาตรฐาน สามารถตรวจสอบได้ ได้ผลผลิตที่ได้มีความปลอดภัยต่อเกษตรกรผู้ผลิตและผู้บริโภค ไม่ทําลายสภาพแวดล้อม ผลผลิตเป็นที่ต้องการของตลาดทั้ง
+              ในและต่างประเทศ <br><br>
+              มีความจำเป็นเนื่องจากจะได้การรับรองการผลิต และผลผลิตเป็นที่ยอมรับ สร้างความเชื่อมั่นของผู้ผลิตและผู้บริโภค และเพิ่มอํานาจในการต่อรองราคาสินค้า
+          </div>
+        </div>
+        <h4 class="mt-5 ms-3">สอบถามเพิ่มเติมเกี่ยวกับข้อมูลหรือแหล่งองค์ความรู้ด้านการเกษตร</h4>
+        <p><button class="btn btn-success ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">answer</button></p>
+        <div style="min-height: 50px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body ms-3" style="width: 600px;">
+              สอบถามเพิ่มเติมเกี่ยวกับข้อมูลหรือแหล่งองค์ความรู้ด้านการเกษตร : <br>
+              ศูนย์บริการร่วมกรมส่งเสริมการเกษตร <br>
+              หมายเลขโทรศัพท์ 0 2955 1641 <br>
+              อีเมล์ doae2560@gmail.com <br>
+              เว็บไซต์ <a class="fw-bold text-success text-decoration-none link-body-emphasis" href="https://www.doae.go.th/home/">https://www.doae.go.th</a>
+            </div>
+          </div>
+        </div>  
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
